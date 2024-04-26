@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative absolute</title>
+    <style>
+        .container{
+            width: auto;
+            height: 550px;
+            background-color: aqua;
+            position: relative;
+        }
+        .container .item{
+            height: 150px;
+            width: 200px;
+            border: 2px groove cadetblue;
+            background: coral;
+            position: absolute
+        }
+        .container .i-1{
+            /* z-index:; */
+            top:0;
+            left: 0;
+
+        }
+        .container .i-2{
+            /* z-index: 5; */
+            top: 0;
+            right: 0;
+        }
+        .container .i-3{
+            bottom: 0;
+            left: 0;
+        }
+        .container .i-4{
+            z-index: 5;
+            bottom: 0;
+            right: 0;
+        }
+        .container .i-5{
+            top: 50%;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <h1> relative absolute</h1>
+    <div class="container">
+        <div class="item i-1">1</div>
+        <div class="item i-2">2</div>
+        <div class="item i-3">3</div>
+        <div class="item i-4">4</div>
+        <div class="item i-5">5</div>
+
+    </div>
+    <div class="slider">
+        <img src="" alt="">
+
+    </div>
+    <div class="info">
+        <h2></h2>
+        <p></p>
+        <button type="button"></button>
+    </div>
+    
+</body>
+</html>

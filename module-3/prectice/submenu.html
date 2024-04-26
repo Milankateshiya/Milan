@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submenu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            height: 60px;
+            width: 100%;
+            background: #000;
+            text-align: center;
+            line-height: 60px;
+            position: fixed;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            padding: 5px 40px;
+            margin: 0 24px;
+            color: coral;
+
+        }
+        ul li a{
+            color: coral;
+            text-decoration: none;
+        }
+        .submenu{
+            position: relative;
+        }
+        .location {
+            height: 0px;
+            width: auto;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            /* display: none; */
+            opacity: 0;
+            transition: 1s;
+        }
+        .location li{
+            display: block;
+            padding: 0 15px;
+        }
+        .submenu:hover .location{
+            /* display: block; */
+            opacity: 1;
+            top: 30px;
+            height: auto;
+        }
+        .hero{
+            height: 550px;
+            width: auto;
+            background-color: powderblue;
+        }
+        .about{
+            height: 330px;
+            width: auto;
+            background: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li class="submenu"><a href="">Location</a>
+            <ul class="location">
+                <li>Rajkot</li>
+                <li>Ahmadabad</li>
+                <li>Surat</li>
+            </ul>
+        </li>
+        <li><a href="">Login</a></li>
+    </ul>
+    <div class="about"></div>
+    <div class="hero"></div>
+    <div class="about" id="about"></div>
+    <div class="hero"></div>
+</body>
+</html>

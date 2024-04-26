@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZ
+        UI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"></script>
+    </script>
+    <style>
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        .box{
+            height: 100px;
+            width: 100%;
+            background-color: tomato;
+            /* display: none; */
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div class="box">this is a box</div>
+    <button class="btn1">hide</button>
+    <button class="btn2">show</button>
+    <button class="btn3">toggle</button>
+
+    <script>
+        document
+        .getElementsByTagName('button')[0]
+        .addEventListener('click',() => {
+            letbox =document.getElementsByClassName('box')[0];
+
+            if(box.classList.contains('hide')){
+                box.classList.remove('hide');
+                box.classList.add('show');
+            } else{
+                box.classList.remove('show');
+                box.classList.add('hide');
+            }
+
+        })
+
+        $('.btn1').click(function () {
+            $('.box').hide();
+        })
+        $('btn2').click(function (){
+            $('.box').show();
+        })
+        $('.btn3').dbclick(function(){
+            $(.'box').toggle('slow');
+            $(.'box')
+        })
+
+    </script>
+    
+</body>
+</html>

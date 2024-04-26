@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      Q.5 What the deference between undefined and undeclare in JavaScript?
+    </h3>
+    <h4>Ans.</h4>
+    <p>
+      Undefined: It occurs when a variable has been declared but has not been
+      assigned any value. Undefined is not a keyword.
+    </p>
+    <p>
+      Undeclared: It occurs when we try to access any variable that is not
+      initialized or declared earlier using the var or const keyword. If we use
+      typeof operator to get the value of an undeclared variable, we will face
+      the runtime error with the return value as “undefined”. The scope of the
+      undeclared variables is always global.
+    </p>
+    <h4>example</h4>
+    <pre>
+      function checkVar() {
+          let string;
+      
+          if (typeof variable === "undefined") {
+              string = "Variable is undefined";
+          } else {
+              string = "Variable is defined";
+          }
+          
+          console.log(string);
+      }
+      
+      checkVar();
+      
+    </pre>
+    <script>
+      function checkVar() {
+        let string;
+
+        if (typeof variable === "undefined") {
+          string = "Variable is undefined";
+        } else {
+          string = "Variable is defined";
+        }
+
+        console.log(string);
+      }
+
+      checkVar();
+    </script>
+  </body>
+</html>

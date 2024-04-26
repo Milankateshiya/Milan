@@ -1,0 +1,81 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .main {
+    background-image: url(https://i.pinimg.com/originals/6f/0a/07/6f0a07c32a16e9a4e3d49eb74bcf73c7.jpg);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* background: 100% 100%; */
+    position: relative;
+  }
+  .info {
+    text-align: center;
+    /* margin: auto; */
+    /* margin-top: 10%; */
+    padding-top: 5%;
+    padding-left: 50%;
+  }
+
+  .main .info h5 {
+    color: white;
+    /* text-align: center; */
+    /* padding-left: 7%; */
+    /* padding-top: 8%; */
+    font-size: 2em;
+  }
+  .main .info p {
+    color: aliceblue;
+    font-size: 1em;
+    /* text-align: center; */
+  }
+  .main svg {
+    position: absolute;
+    bottom: 0;
+  }
+  button {
+    height: 7%;
+    width: 3%;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .photo {
+    position: absolute;
+    /* height: auto; */
+  }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+  }
+  .p-1 {
+    top: 71%;
+    left: 20%;
+  }
+  .p-2 {
+    top: 72%;
+    left: 40%;
+  }
+  .p-2:hover {
+    height: 15%;
+    width: 10%;
+    border-color: chocolate;
+  }
+  .p-3 {
+    top: 60%;
+    left: 63%;
+  }
+  .p-4 {
+    top: 60%;
+    left: 85%;
+  }
+  .web {
+    margin: auto;
+    padding-left: 25%;
+    /* padding-top: 15%; */
+  }
+  .web h5 {
+    color: chocolate;
+  }

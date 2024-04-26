@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-02</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        div{
+             height: 300px;width: 220px;
+            margin: 30% 50% ;
+            background-color: brown;
+            animation-name: animate;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            /* animation-timing-function:linear ; */
+            border: 2px solid red; 
+            /* border-radius: 50%; */
+             animation-iteration-count: infinite;
+            /* animation-play-state: running; */
+            border: 20px solid rgb(201, 201, 94);
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        @keyframes animate{ 
+            0%{
+                background: lightblue;
+                /* transform: rotate(90deg); */
+                border: 10px solid;
+                border-color: red blueviolet lightcoral;
+
+            }
+            50%{
+                background-color:  rgb(16, 167, 16);
+                transform: rotate(180deg);
+                border: 10px solid;
+                border-color: lightsalmon lightslategray lightgoldenrodyellow ; 
+
+            }
+            75%{
+                background: rgb(167, 110, 16);
+                /* transform: rotate(200deg); */
+                border: 10px solid;
+                border-color: green yellow red;
+
+            }
+            270%{
+                background: rgb(110, 115, 20);
+                border: 10px solid;
+                /* transform: rotate(250deg); */
+                border-color: yellow blueviolet red;
+
+            }
+            360%{
+                background: rgb(150, 110, 220);
+                border: 10px solid;
+                /* transform: rotate(360deg); */
+                border-color: red blue yellow;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        milan
+
+    </div>
+</body>
+</html>

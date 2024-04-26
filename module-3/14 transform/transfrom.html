@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tranfrom</title>
+    <style>
+        body{
+            background: lightsalmon;
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 220px ;
+            width: 250px;
+            border: 5px solid red;
+            background: powderblue;
+            margin: 5px auto;
+            transition: 1s;
+            
+
+        }
+        .transform:hover{
+            /* transform: rotate(-360deg); */
+            /* transform: matrix(50px); */
+            /* transform: skewY(50deg); */
+            /* transform: scale(2); */
+            /* transform:rotateZ('angle'); */
+            transform: rotate(60deg) scale(2);
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="original">original</div>
+    <div class="transform">transfrom</div>
+    
+</body>
+</html>

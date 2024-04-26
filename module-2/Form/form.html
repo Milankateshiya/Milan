@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h2>Registration</h2></legend>
+        <form action="" method="post">
+            <div>
+                <label for="nm">Name</label>
+                <input type="text" name="nm" id="nm" placeholder="Enter your name..." minlength="3" maxlength="50" pattern="[a-z,A-Z]{3,5}" required><br><br>
+                <label for="unm">user name</label>
+                <input type="unm" name="" id="unm" value="tops_tech" required><br><br>
+                <label for="phone">phone no:</label>
+                <input type="tel" name="phone" id="" required minlength="10" maxlength="10" pattern="[0-9]{10}"><br><br>
+                <label for="pass">password</label>
+                <input type="password" name="pass" id="" required pattern="[0-9,A-Z,a-z,@]{6,8}"><br><br>
+                <input type="submit">
+            </div>
+        </form>
+    </fieldset>
+    
+</body>
+</html>

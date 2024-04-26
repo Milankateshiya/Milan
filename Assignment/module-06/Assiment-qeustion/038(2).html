@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .info {
+        border: 2px solid blue;
+        background-color: aquamarine;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Q-38 (2)</h3>
+    <h4>Ans.</h4>
+    <div class="info">
+      <p>A</p>
+      <p>B C</p>
+      <p>D E F</p>
+      <p>G H I J</p>
+      <p>K L M N O</p>
+    </div>
+    <pre>
+        let n = 5;
+        let string = "";
+        let count = 0;
+        for (let i = 1; i <= 5; i++) {
+          for (j = 0; j < i; j++) {
+            string += String.fromCharCode(count + 65) + " ";
+            count++;
+          }
+          string += " \n";
+        }
+        console.log(string);
+    </pre>
+    <script>
+      let n = 5;
+      let string = "";
+      let count = 0;
+      for (let i = 1; i <= 5; i++) {
+        for (j = 0; j < i; j++) {
+          string += String.fromCharCode(count + 65) + " ";
+          count++;
+        }
+        string += " \n";
+      }
+      console.log(string);
+    </script>
+  </body>
+</html>

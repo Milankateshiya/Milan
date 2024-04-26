@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-app</title>
+    <style>
+      .taskcomplete {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul></ul>
+    <button onclick="addTask()">Add</button>
+    <script>
+      function addTask() {
+        let newTask = document.createElement("li");
+        let task = prompt();
+        newTask.innerText = task;
+        newTask.setAttribute("onclick", "completeThisTask(this)");
+        consloe.log(newTask);
+
+        let taskList = document.getElementsByTagname("ul")[0];
+        taskList.append(newTask);
+      }
+
+      function completeThisTask(element) {
+        element.classList("task-complete");
+      }
+    </script>
+  </body>
+</html>

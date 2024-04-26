@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            width: 100%;
+            height: auto;
+            background-color: bisque;
+            text-align: center;
+        }
+
+        .header ul {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            clear: both;
+
+        }
+
+        .header ul li {
+            list-style: none;
+            width: 15%;
+            float: left;
+            font-size: 25px;
+            margin: 1px;
+        }
+
+        .header ul li a {
+            color:black ;
+            text-decoration: none;
+
+        }
+        .slider{
+            width: 100%;
+            height: 850px;
+            position: relative;
+        
+        }
+
+        .slider .img{
+            width: 100%;
+            height: 800px;
+            position: absolute;
+            filter: blur(5px);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .slider .text{
+            position: absolute;
+            width: auto;
+            height: auto;
+            /* top: 225px; */
+            bottom: 0;
+            left: 220px;
+            box-sizing:border-box;
+            border: 3px black solid;
+            
+
+        }
+
+        .slider .text .h2{
+            border: 3px solid blueviolet;
+
+        }
+        .slider .text .p{
+            font-weight: 100;
+            
+        }
+
+        .slider .button{
+            text-align: center;
+        }
+
+        
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- hedar -->
+    <div class="header">
+        
+        <ul>
+        <li><a href="i-1">Home</a></li>
+        <li><a href="i-1">About us</a></li>
+        <li><a href="i-1">Team</a></li>
+        <li><a href="i-1">Services</a></li>
+        <li><a href="i-1">Blog</a></li>
+        <li><a href="i-1">Contact</a></li>
+        <div style="clear: both;"></div>
+        </ul>
+    
+    </div>
+    <div class="slider">
+        <div class="img">
+            <img src="https://4.bp.blogspot.com/-NusT8_BxXvU/WigtjvJvKLI/AAAAAAABOyg/VP7N3f2xgkAOOU2LPKaVCBdTsMiDJp_EgCK4BGAYYCw/s1600/Web-design.jpg" alt="">
+        </div>
+        <div class="text">
+        
+             <h2 style="text-align: center;" >We Are Best </h2>
+            <h2 style="text-align: center;">Consulting Agency</h2><br><br><br>
+            <p style="color: blue;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                 Dolorum architecto maiores esse aperiam praesentium fugit quo magnam voluptatibus, illo, <br>
+                  consectetur nihil accusamus expedita sed non. Delectus totam natus aut veritatis illum beatae,  <br>
+                   dolores praesentium quasi distinctio excepturi qui incidunt architecto enim optio perspiciatis voluptas!
+            </p>
+            <div class="button">
+            <button type="button" style="background-color: tomato;" >Get Started</button>
+            </div>
+    
+        </div>
+        
+        
+
+    
+
+    </div>
+    
+</body>
+</html>

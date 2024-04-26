@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tempalt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* header */
+        .header{
+            height: auto;
+            width: 100%;
+            background-color: #414c51;
+            text-align: center; 
+            padding: 10px 10px;
+    
+        
+        }
+
+        .header .ul{
+            width: 100%;
+            height: auto;
+            float: left;
+            clear: both;
+
+        }
+        .header li{
+            display: inline;
+            padding: 1px 15px;
+            float: left ;
+            width: 15%;
+
+            
+        }
+        
+        .header ul a{
+            font-family:'Lucida Sans';
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #b4babe;
+        }
+
+        .header h3{
+            
+        }
+        .slider{
+            position: relative;
+            height:auto;
+            width: 100%;
+        }
+        .image img{
+            /* position: absolute; */
+            width: 100%;
+            height: 350px;
+            background: no-repeat;
+            background-size: cover;
+            filter: blur(1px);
+        }
+        .text{
+            /* box-sizing: border-box; */
+            background-color: #e26225;
+            height: 60px;
+            width: 400px;
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            left: 45%;
+            color: aliceblue;
+        }
+        .info{
+            height: auto;
+            width: auto;
+            clear: both;
+        }
+        .ifo h2{
+            text-align: center;
+        }
+        .item{
+            height: 80%;
+            width: 20%;
+            margin: 45px 25px;
+            text-align: center;
+            font-size: 3em;
+            float: left;
+        }
+        .item p{
+            font-size: 20px;
+            text-align: center;
+            margin: 15px;
+        }
+        .item h3{
+            width: 50%;
+            height: auto;
+            font-size: 20px;
+            margin: 0px 80px;
+            padding: 0px 5px;
+        }
+        .item button{
+        background-color: #e6ebee;
+        height: 35px;
+        width: 82px;
+        font-size: 15px;
+        cursor: pointer;
+
+        }
+        .box{
+            height: auto;
+            width: auto;
+            background-color: #b4babe;
+            clear: both;
+
+        }
+        .box h2{
+            text-align: center;
+        }
+        .box p{
+            text-align: center;
+        }
+        .box .it{
+            width: 30%;
+            height: auto;
+            background-color: #e6ebee;
+            text-align: center;
+            float: left;
+            margin: 10px;
+            padding: 35px;
+            margin-bottom: 5px;
+        }
+        .it img{
+            width: 300px;
+            height: 250px;
+            
+        }
+        .it h2{
+            color: #e26225;
+        }
+        .it h3{
+            color: #414c51;
+            font-size: 15px;
+            padding-left: 15px;
+            text-align: center;
+        }
+        .point{
+            height: auto;
+            width: 100%;
+            clear: both;
+        }
+        .font{
+            float: left;
+            width: 50%;
+            padding-left: 35px;
+            color: #e6ebee;
+            float: left;
+        }
+        #s-1{
+            background-color: #e26225;
+        }
+        #s-2{
+            background-color: #414c51;
+        }
+        .point button{
+            font-size: 15px;
+            padding: 10px 10px;
+        }
+        .from{
+            height: 350px;
+            width: 100%;
+            clear: both;
+            background-image: url('https://www.imagelighteditor.com/img/bg-after.jpg');
+            background-size: 100% 100%;
+            /* background: no-repeat; */
+            margin: 0px;
+            padding: 0px;
+        }
+        .from h2{
+            color: #e26225;
+            text-align: center;
+        }
+        .enter{
+            float: left;
+        }
+        #a-1{
+            padding: 40px;
+        }
+        #a-2{
+            padding-left: 20px;
+            padding-right: 40px;
+        }
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">project</a></li>
+            <li><a href="">our Blog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <h3>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-regular fa-wifi"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-google"></i>
+        </h3>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="slider">
+        <div class="image">
+            <img src="https://4.bp.blogspot.com/-NusT8_BxXvU/WigtjvJvKLI/AAAAAAABOyg/VP7N3f2xgkAOOU2LPKaVCBdTsMiDJp_EgCK4BGAYYCw/s1600/Web-design.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3>
+                WE MEET YOUR FINANCIAL
+            </h3>
+            <h3>INVESTMENT NEEDS</h3>
+        </div>
+
+    </div>
+
+    <div class="info">
+        <div><h2 style="text-align: center;">OUR FOCUS IS OUR CLIENTS' SUCCESS</h2></div>
+
+       <div class="item  i-1" id="i-1">
+         <h3><i class="fa-solid fa-user"></i> </h3>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+        <button type="button">select</button>
+      </div>
+
+        <div class="item i-2" id="i-2">
+            <h3><i class="fa-brands fa-wordpress"></i> </h3>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+            <button type="button">select</button>
+        </div>
+
+        <div class="item i-3" id="i-3">
+            <h3><i class="fa-solid fa-calendar-days"></i> </h3>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="button">select</button>
+        </div>
+
+       <div class="item i-4" id="i-4"> 
+        <h3><i class="fa-solid fa-bell"></i> </h3>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur.</p>
+        <button type="button">select</button>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="box">
+        <h2>ADVICE ON HOW TO MAKE WISE INVESTMENT</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, exercitationem.</P>
+        <div class="it">
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <h2>Lorem, ipsum.</h2>
+            <h3>Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, dolorem.</h3>
+            <h3><i class="fa-solid fa-arrow-right"></i></h3>
+        </div>
+
+        <div class="it">
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <h2>Lorem, ipsum.</h2>
+            <h3>Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, dolorem.</h3>
+            <h3><i class="fa-solid fa-arrow-right"></i></h3>
+        </div>
+        <div class="it">
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            <h2>Lorem, ipsum.</h2>
+            <h3>Lorem ipsum dolor sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, dolorem.</h3>
+            <h3><i class="fa-solid fa-arrow-right"></i></h3>
+        </div>
+        <div style="clear: both;"></div>
+
+    </div>
+    <div class="point">
+        <div class="font" id="s-1">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul> <br>
+            <button type="button">learn more</button>
+        </div >
+        <div class="font" id="s-2">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+            </ul> <br>
+            <button type="button">learn more</button>
+            <div style="clear: both;"></div>
+        </div>
+        
+        <div class="from">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+
+            <div class="enter" id="a-1">
+                <input type="text" name="name" id="nm" placeholder="Nmae"><br>
+                <input type="email" name="" id="" placeholder="Email"><br>
+                <input type="address" name="" id="" placeholder="place"><br>
+            </div>
+            <div class="enter" id="a-2"><textarea name="molestiae" id="" cols="30" rows="10" placeholder="Message"></textarea></div>
+            <button type="button">send</button>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+     
+</body>
+</html>

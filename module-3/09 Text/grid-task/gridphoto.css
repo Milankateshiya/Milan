@@ -1,0 +1,50 @@
+.box{
+    height: auto;
+    width:100% ;
+    display: grid;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.box .header{
+    grid-area: 1/ 1/ 2/ 2;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.box .menu{
+    grid-area: 1/ 2/ 2/ 5;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.box .hero{
+    grid-area: 2/ 1/ 8/ 5;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+.box .main{
+    grid-area: 8/ 1/ 12/ 3;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+.box .image{
+    grid-area: 8/ 4/ 10/ 5;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+}
+.box .extra{
+    grid-area: 10/ 4/ 12/ 5;
+    text-align: center;
+    background-color:rgb(32, 209, 144);
+    color: black;
+
+}
+.box .banner{
+    text-align: center;
+    grid-area: 12/ 1/ 14/ 5;
+    background-color: yellow;
+    color: black;
+}

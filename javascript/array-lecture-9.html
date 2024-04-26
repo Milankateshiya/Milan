@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      a = "milan";
+      b = "nishant";
+      c = "rakesh";
+      let name = ["milan", "nishant", "rakesh", a];
+      console.log(name[name.length - 2]);
+
+      name[2] = "cool nishant";
+      console.log(name);
+
+      name.push("dhyanesh");
+      console.log(name);
+
+      name.pop("raj");
+      console.log(name);
+
+      name.unshift("milan");
+      console.log(name);
+
+      //   console.log(name.join("*"));
+      //   console.log(name.slice(2, name.lent));
+
+      console.log(name.splice(1, 1, "Smart rakesh"));
+      console.log(name);
+
+      console.log(name.splice());
+
+      name.shift("nishant");
+      console.log(name);
+    </script>
+  </body>
+</html>

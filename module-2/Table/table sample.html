@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpel</title>
+    <style>
+        table,th,td{
+            border: 2px solid rgb(150, 160, 255);
+            border-collapse:collapse ;
+        }
+        table{
+            width: 100%;
+        }
+        thead{
+            background: #eee;
+        }
+        .fail{
+            color: #b00;
+        }
+        #fail{
+            background-color: #bb6;
+        }
+        caption{
+            text-decoration: overline underline;
+            text-decoration-style: dotted;
+            text-decoration-color: rgb(150, 160, 255) ;
+        }
+    </style>
+
+</head>
+<body>
+    <table cellpading="5px" cellspacing="3px">
+        <caption>sudent result</caption>
+        <thead>
+            <tr>
+                <th>no</th>
+                <th>name</th>
+                <th>total</th>
+                <th>result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>sita</td>
+                <td rowspan="3">400</td>
+                <td rowspan="3">pass</td>
+            </tr>
+            <tr align="center">
+                <td>2</td>
+                <td>gita</td>
+            </tr>
+            <tr align="center">
+                <td>3</td>
+                <td>rita</td>
+            </tr>
+            <tr align="center">
+                <td>4</td>
+                <td>sita</td>
+                <td>64</td>
+                <td class="fail" id="fail">fail</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>total:4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

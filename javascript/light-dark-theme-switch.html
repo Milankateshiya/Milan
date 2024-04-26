@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #e8eff6;
+        transition: all 600ms;
+      }
+
+      button {
+        font-size: 5em;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button><i class="fa-solid fa-moon"></i></button>
+    <script>
+      const darkModeBtn = document.gatElementsByTagName("button")[0];
+      const bodyEle = document.gatElementsByTagName("body")[0];
+
+      isDarmode = false;
+
+      darkModeBtn.addEventListener("click", function () {
+        if (isDarkMode == true) {
+          bodyEle.style.backgroundCloor = "#e8eff6";
+          isDarkMode = false;
+
+          //   darkModeBtn.innerText='dark Mode';
+          darkModeBtn.innerHTML = <i class="fa-solid fa-moon"></i>;
+        } else {
+          bodyEle.style.backgroundCloor = "#292929";
+          isDarkMode = true;
+          // darkMode.innerText ='Light Mode';
+          darkModeBtn.ineerHTLM = <i class="fa-solid fa-moon"></i>;
+        }
+      });
+    </script>
+  </body>
+</html>
