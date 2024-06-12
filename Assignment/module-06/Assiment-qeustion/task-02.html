@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        border: 3px solid black;
+        width: 600px;
+        height: 300px;
+      }
+      h3 {
+        text-align: center;
+      }
+      #plus {
+        font-size: x-large;
+      }
+      #minus {
+        font-size: x-large;
+      }
+      #mltu {
+        font-size: x-large;
+      }
+      #div {
+        font-size: x-large;
+      }
+      #per {
+        font-size: x-large;
+      }
+      label {
+        margin: 10%;
+      }
+      .controler {
+        margin: 10%;
+      }
+      .info {
+        margin-left: 10%;
+      }
+      #result {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Maths Operations</h3>
+      <div class="info">
+        Enter 1st number:
+        <input type="number" name="first" id="first" /> <br /><br />
+        Enter 2nd number:
+        <input type="number" name="second" id="second" />
+      </div>
+      <div class="controler">
+        <input type="button" name="" id="plus" value="+" />
+        <input type="button" name="" id="minus" value="-" />
+        <input type="button" name="" id="mltu" value="*" /> <br />
+        <br />
+        <input type="button" name="" id="div" value="/" />
+        <input type="button" name="" id="per" value="%" />
+
+        <label for="">Answer is:</label>
+        <span id="result"></span>
+      </div>
+    </div>
+    <script>
+      document.getElementById("plus").addEventListener("click", () => {
+        value1 = Number(document.getElementById("first").value);
+        value2 = Number(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = plus(value1, value2);
+      });
+      function plus(value1, value2) {
+        return value1 + value2;
+      }
+      document.getElementById("minus").addEventListener("click", () => {
+        value1 = Number(document.getElementById("first").value);
+        value2 = Number(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = minus(value1, value2);
+      });
+      function minus(value1, value2) {
+        return value1 - value2;
+      }
+      document.getElementById("mltu").addEventListener("click", () => {
+        value1 = Number(document.getElementById("first").value);
+        value2 = Number(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = mltu(value1, value2);
+      });
+      function mltu(value1, value2) {
+        return value1 * value2;
+      }
+
+      document.getElementById("div").addEventListener("click", () => {
+        value1 = Number(document.getElementById("first").value);
+        value2 = Number(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = div(value1, value2);
+      });
+      function div(value1, value2) {
+        return value1 / value2;
+      }
+      document.getElementById("per").addEventListener("click", () => {
+        value1 = Number(document.getElementById("first").value);
+        value2 = Number(document.getElementById("second").value);
+        document.getElementById("result").innerHTML = per(value1, value2);
+      });
+      function per(value1, value2) {
+        return value1 % value2;
+      }
+    </script>
+  </body>
+</html>

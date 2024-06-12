@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password</title>
+    <style>
+      .container {
+        border: 5px solid black;
+        background-color: aqua;
+        width: 400px;
+        height: 80px;
+        margin: auto;
+        padding: 10%;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <strong>Enter Password:</strong>
+      <input type="password" name="" id="pin" value="" /> <br /><br />
+      <input type="checkbox" name="" id="" onclick="toggle()" />
+      <strong>Show password</strong>
+    </div>
+    <script>
+      function toggle() {
+        let pass = document.getElementById("pin");
+        if (pass.type === "password") {
+          pass.type = "text";
+        } else {
+          pass.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

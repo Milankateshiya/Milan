@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task-03 creat result</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    input {
+      display: grid;
+      justify-content: space-between;
+      margin-left: 49%;
+    }
+    .Langauge {
+      position: absolute;
+      font-size: large;
+    }
+    p {
+      text-align: center;
+      font-size: x-large;
+      margin: 15px;
+    }
+    .Marksheet {
+      width: 80vh;
+      /* height: auto; */
+      border: 3px solid black;
+      padding: 15px;
+      margin: auto;
+      /* position: relative; */
+    }
+    button {
+      margin: 2%;
+      margin-left: 40%;
+      font-size: larger;
+    }
+    .total {
+      font-size: larger;
+
+      margin: 15%;
+    }
+    .per {
+      font-size: large;
+    }
+  </style>
+  <body>
+    <div class="Marksheet">
+      <h3>Marksheet for Information Technology</h3>
+      <p>Enter Marks</p>
+      <label for="" class="Langauge">1. C Language</label>
+      <input type="number" name="" id="sub1" /><br />
+      <label for="" class="Langauge">2. C++ Langauge</label>
+      <input type="number" name="" id="sub2" /><br />
+      <label for="" class="Langauge">3. Database</label>
+      <input type="number" name="" id="sub3" /><br />
+      <label for="" class="Language">4. HTML</label>
+      <input type="number" name="" id="sub4" /><br />
+      <label for="" class="Language">5. CSS</label>
+      <input type="number" name="" id="sub5" /><br />
+      <label for="" class="Language">6. php</label>
+      <input type="number" name="" id="sub6" /><br />
+      <label for="" class="Language">7. Core java</label>
+      <input type="number" name="" id="sub7" /> <br />
+      <button type="submit" id="click">Result</button> <br />
+      <label for="text" class="total"
+        >Total is:
+        <span class="Marks" id="result">/350</span>
+      </label>
+      <label for="text" class="result"
+        >Percentage is :
+        <span id="percentage">%</span>
+      </label>
+    </div>
+    <script>
+      document.getElementById("click").addEventListener("cilck", () => {
+        subject1 = Number(document.getElementById("sub1").value);
+        subject2 = Number(document.getElementById("sub2").value);
+        subject3 = Number(document.getElementById("sub3").value);
+        subject4 = Number(document.getElementById("sub4").value);
+        subject5 = Number(document.getElementById("sub5").value);
+        subject6 = Number(document.getElementById("sub6").value);
+        subject7 = Number(document.getElementById("sub7").value);
+        let result = finalPercentage(
+          subject1,
+          subject2,
+          subject3,
+          subject4,
+          subject5,
+          subject6,
+          subject7
+        );
+        document.getElementById("result").innerText = total[0];
+        document.getElementById("percentage").innerText = result[0];
+      });
+
+      function finalPercentage(
+        subject1,
+        subject2,
+        subject3,
+        subject4,
+        subject5,
+        subject6,
+        subject7
+      ) {
+        total =
+          subject1 +
+          subject2 +
+          subject3 +
+          subject4 +
+          subject5 +
+          subject6 +
+          subject7;
+        percentage = math.floor((total * 100) / 350);
+        return [total, percentage];
+      }
+    </script>
+  </body>
+</html>
