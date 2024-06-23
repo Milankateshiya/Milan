@@ -1,0 +1,22 @@
+body{
+    height: 0;
+    width: 0;
+    box-sizing: border-box;
+    background-color: aliceblue !important;
+    overflow: hidden;
+
+}
+.calculator-app{
+    width: 80%;
+    height: auto;
+    margin-top:7% !important ;
+}
+.calculator-app input{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    text-align: right;
+    font-size: 28px;
+    border: none;
+    background-color: aliceblue;
+}
