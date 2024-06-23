@@ -32,8 +32,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    />
-
     <script src="celculetar/js/calc.js"></script>
   </head>
   <body>
@@ -78,6 +76,7 @@
               id="btn"
               value="%"
               class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4"
+              onclick="clr()"
             >
               C
             </button>
@@ -86,7 +85,7 @@
             <button
               type="button"
               id="btn"
-              value="%"
+              onclick="clrSlice()"
               class="btn btn-lg border border-0 bg-white w-100 p-3 shadow fs-4"
             >
               <span class="bi bi-backspace"></span>
@@ -104,13 +103,222 @@
               1/x
             </button>
           </td>
+
           <td>
             <button
               type="button"
               id="btn"
               value="%"
-              class="btn btn-lg border border-0 w-100 p-3 shadow fs-4 onclick"
-            ></button>
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="sqrResult()"
+            >
+              x<sup>2</sup>
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="%"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="sqrtResult()"
+            >
+              2√x
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="/"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              /
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="7"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              7
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="8"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              8
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="9"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              9
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="*"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              x
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="4"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              4
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="5"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              5
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="6"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              6
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="-"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              -
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="1"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              1
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="2"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              2
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="3"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              3
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="+"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              +
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="%"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              +/-
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="0"
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              0
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              value="."
+              class="btn btn-lg border-0 w-100 p-3 bg-white shadow fs-4"
+              onclick="return getResult(this.value)"
+            >
+              .
+            </button>
+          </td>
+          <td>
+            <button
+              type="button"
+              id="btn"
+              class="btn btn-lg border-0 w-100 p-3 bg-primary shadow fs-4"
+              onclick=" getFinalResult()"
+            >
+              =
+            </button>
           </td>
         </tr>
       </table>

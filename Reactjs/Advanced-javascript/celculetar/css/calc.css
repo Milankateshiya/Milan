@@ -4,12 +4,19 @@ body{
     box-sizing: border-box;
     background-color: aliceblue !important;
     overflow: hidden;
+    margin-left: 35% !important;
+             
+   
 
 }
 .calculator-app{
     width: 80%;
     height: auto;
-    margin-top:7% !important ;
+    margin-top:10% !important ;
+   
+    
+   
+    
 }
 .calculator-app input{
     width: 100%;
@@ -19,4 +26,6 @@ body{
     font-size: 28px;
     border: none;
     background-color: aliceblue;
+            
+    
 }
