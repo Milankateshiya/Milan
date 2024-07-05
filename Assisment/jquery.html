@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .image {
+        height: 120px;
+        width: 140px;
+      }
+      .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+      .nav {
+        width: 100%;
+        vertical-align: middle;
+        background-color:rgb(25, 34, 41);
+        color: azure;
+      }
+      .nav ul {
+        margin-right: 150px;
+        text-align: right;
+      }
+      .nav ul li {
+        display: inline;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 30px;
+        text-align: left;
+      }
+      .alert{
+        position: fixed;
+        top: 15%;
+        right: 2%;
+        background:#19141e ;
+        font-weight: 800;
+        padding: 20px;
+        width: 200px;
+        height: 50vh;
+        border-radius: 10px;
+        transform: translateX(150%);
+        transition: transform 0.3s ease-in-out;
+    
+      }
+      .alert .navigation{
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        
+      }
+      .alert  li a{
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #b3a2a2;
+        margin-left:10px ;
+        letter-spacing: 1px;
+        padding: 20px;
+        list-style: none;
+
+
+      }
+    
+      
+      
+      .alert i{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 20px;
+        cursor: pointer;
+        color: #a89696;
+      }
+      body{
+        background: #fff;
+      }
+      .hamburger{
+        display: none;
+        color: #f1a8a8;
+        cursor: pointer;
+        text-align: right;
+        margin-right: 50px;
+        font-size: 25px;
+        padding: 10px;
+      }
+      header{
+        background-color: rgb(25, 34, 41);
+      }
+
+      @media(max-width:991px) {
+     .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <img
+        src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+        alt=""
+      />
+    </div>
+    <header>
+        <div class="nav">
+            <ul>
+              <li><a href=""></a>Home</li>
+              <li><a href=""></a>About</li>
+              <li><a href=""></a>Project</li>
+              <li><a href=""></a>Contect</li>
+            </ul>
+          </div>
+          <div class="hamburger">
+              <i class="fa-solid fa-bars on" id="on"></i>
+          </div>
+          <div class="alert">
+              <ul class="navigation1">
+                  <i class='bx bxs-x-circle close'></i>
+                  <li><a href="#banner" class="out">HOME</a></li> <br>
+                  
+                  <li><a href="#about" class="out">ABOUT</a></li><br>
+                  <li><a href="#review" class="out">PROJECT</a></li><br>
+                  <li><a href="#contact" class="out">CONTACT</a></li>
+              </ul>
+          </i>
+          </div>
+    </header>
+
+    
+
+    </div>
+    <script>
+        
+          $(document).ready(function () {
+            $(".on").click(function () {
+                $('.alert').css({
+                    'transform': 'translateX(0)',
+                });
+            });
+
+            $(".close").click(function () {
+                $('.alert').css({
+                    'transform': 'translateX(150%)',
+                });
+            });
+
+            $(".out").click(function () {
+                $('.alert').css({
+                    'transform': 'translateX(150%)',
+                });
+            })
+        })
+    </script>
+
+  </body>
+</html>
