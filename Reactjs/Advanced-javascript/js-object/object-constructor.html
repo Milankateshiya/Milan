@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //    object is constructor: declared with new object() this is called objectct as constructror
+      // object as constructor is always celled using function and stroed each values stored used this keyword
+
+      function employee(id, name, age, salary) {
+        (this.id = 1001), (this.name = "milan");
+        (this.age = 26), (this.salary = 32000);
+      }
+      var obj = new employee();
+      console.log(obj);
+    </script>
+  </body>
+</html>
